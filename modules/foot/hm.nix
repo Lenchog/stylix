@@ -20,7 +20,7 @@ mkTarget {
       { colors, inputs }:
       {
         programs.foot.settings.main.include = lib.singleton (
-          toString (colors-dark {
+          toString (colors {
             templateRepo = inputs.tinted-foot;
           })
         );
